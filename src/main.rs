@@ -41,7 +41,7 @@ async fn main() {
 	});
 
 	let invoice =
-		node.bolt11_payment().receive_via_jit_channel(3_500_000, "asdf", 3600, None).unwrap();
+		node.bolt11_payment().receive_via_jit_channel(5_000_000, "asdf", 3600, None).unwrap();
 	println!("INVOICE: {}", invoice);
 	pause();
 
